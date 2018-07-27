@@ -9,7 +9,7 @@ public class Client {
         // Channel is the abstraction to connect to a service endpoint
         // Let's use plaintext communication because we don't have certs
         final ManagedChannel channel = ManagedChannelBuilder
-                .forTarget(":8080")
+                .forTarget("localhost:50051")
                 .usePlaintext(true)
                 .build();
 
